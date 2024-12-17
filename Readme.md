@@ -11,12 +11,12 @@
 ### Endpoints de Comodidades
 
 
-[Listar](localhost:5000/api/v1/comodidad) **GET**
+[Listar](http://localhost:5000/api/v1/comodidad) **GET**
 
-[Modificar](localhost:5000/api/v1/comodidad/4) **PUT**
+[Modificar](http://localhost:5000/api/v1/comodidad/4) **PUT**
 
-[Crear](localhost:5000/api/v1/comodidad) **POST**
+[Crear](http://localhost:5000/api/v1/comodidad) **POST**
 
-[Mostrar Uno](localhost:5000/api/v1/comodidad/4) **GET**
+[Mostrar Uno](http://localhost:5000/api/v1/comodidad/4) **GET**
 
-[Eliminar](localhost:5000/api/v1/comodidad/4) **DELETE**
+[Eliminar](http://localhost:5000/api/v1/comodidad/4) **DELETE**
