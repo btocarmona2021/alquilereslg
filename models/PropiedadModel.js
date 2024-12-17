@@ -2,7 +2,7 @@ import db from "../db/conexion.js";
 import {DataTypes} from "sequelize";
 
 
-const Propiedad = db.define('propiedades', {
+const Propiedad = db.define('propiedad', {
 
     id: {
         type: DataTypes.BIGINT, autoIncrement: true, primaryKey: true
@@ -22,7 +22,8 @@ const Propiedad = db.define('propiedades', {
         type: DataTypes.STRING(255), allowNull: true,
     },
 }, {
-    timestamps: false  // Deshabilitar timestamps
+    tableName:'propiedades',
+    timestamps: false
 })
 
 

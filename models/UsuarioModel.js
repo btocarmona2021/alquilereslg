@@ -2,7 +2,7 @@ import db from "../db/conexion.js";
 import {DataTypes} from 'sequelize';
 import bcrypt from "bcrypt";
 
-const Usuario = db.define('usuarios', {
+const Usuario = db.define('usuario', {
         id: {
             type: DataTypes.BIGINT,
             primaryKey: true,

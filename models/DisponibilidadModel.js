@@ -1,9 +1,9 @@
-import db from "../db/conexion.js";
+import db from '../db/conexion.js';
 import {DataTypes} from "sequelize";
 import Propiedad from "./PropiedadModel.js";
 
 
-const Tarifa = db.define('tarifa', {
+const Disponibilidad = db.define('disponibilidad', {
 
         id: {
             type: DataTypes.BIGINT,
@@ -18,26 +18,19 @@ const Tarifa = db.define('tarifa', {
                 key: 'id'
             }
         },
-        fecha_inicio: {
-            type: DataTypes.DATE,
-            allowNull: false,
-        },
-        fecha_fin: {
+        fecha: {
             type: DataTypes.DATE,
             allowNull: true,
         },
-        precio: {
-            type: DataTypes.DECIMAL(10, 2),
-            allowNull: true
+        disponible: {
+            type: DataTypes.BOOLEAN
         }
     },
     {
-        tableName:'tarifas',
+        tableName: 'disponibilidad',
         timestamps: false
     }
 )
-Tarifa.belongsTo(Propiedad, {foreignKey: 'propiedadId'});
+Disponibilidad.belongsTo(Propiedad,{foreignKey:'propiedad_id'})
 
-export default Tarifa;
-
-
+export default Disponibilidad;
