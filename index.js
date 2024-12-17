@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import router from "./routes/ComodidadRoute.js";
-
+import routerComod from "./routes/ComodidadRoute.js";
+import routerDispon from "./routes/disponibilidadRoute.js";
 
 const app = express();
 
@@ -10,7 +10,9 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json())
 
-app.use('/api/v1',router)
+app.use('/api/v1',routerComod)
+app.use('/api/v1',routerDispon)
+
 
 app.listen(PORT, (error) => {
     if (error) {
