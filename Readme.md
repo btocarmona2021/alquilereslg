@@ -67,3 +67,16 @@
 [Mostrar Uno](http://localhost:5000/api/v1/imagen/6) **GET**
 
 [Eliminar](http://localhost:5000/api/v1/imagen/6) **DELETE**
+
+## Endpoints de Opiniones
+
+[Listar](http://localhost:5000/api/v1/opinion) **GET**
+
+[Modificar](http://localhost:5000/api/v1/opinion/6) **PUT**
+
+[Crear](http://localhost:5000/api/v1/opinion) **POST**
+
+[Mostrar Uno](http://localhost:5000/api/v1/opinion/6) **GET**
+
+[Eliminar](http://localhost:5000/api/v1/opinion/6) **DELETE**
+

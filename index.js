@@ -5,6 +5,7 @@ import routerDispon from "./routes/DisponibilidadRoute.js";
 import routerPropied from "./routes/PropiedadRoute.js";
 import routerTarif from "./routes/TarifaRoute.js";
 import routerImage from "./routes/ImagenRoute.js";
+import routerOpin from "./routes/OpinionRoute.js";
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use('/api/v1',routerDispon);
 app.use('/api/v1',routerPropied);
 app.use('/api/v1',routerTarif);
 app.use('/api/v1',routerImage);
+app.use('/api/v1',routerOpin);
 
 
 app.listen(PORT, (error) => {
