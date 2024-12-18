@@ -55,3 +55,15 @@
 [Mostrar Uno](http://localhost:5000/api/v1/tarifa/6) **GET**
 
 [Eliminar](http://localhost:5000/api/v1/tarifa/6) **DELETE**
+
+## Endpoints de Imagenes
+
+[Listar](http://localhost:5000/api/v1/imagen) **GET**
+
+[Modificar](http://localhost:5000/api/v1/imagen/6) **PUT**
+
+[Crear](http://localhost:5000/api/v1/imagen) **POST**
+
+[Mostrar Uno](http://localhost:5000/api/v1/imagen/6) **GET**
+
+[Eliminar](http://localhost:5000/api/v1/imagen/6) **DELETE**
