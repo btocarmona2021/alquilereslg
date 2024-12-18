@@ -3,6 +3,7 @@ import cors from 'cors';
 import routerComod from "./routes/ComodidadRoute.js";
 import routerDispon from "./routes/disponibilidadRoute.js";
 import routerPropied from "./routes/PropiedadRoute.js";
+import routerTarif from "./routes/TarifaRoute.js";
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use('/api/v1',routerComod);
 app.use('/api/v1',routerDispon);
 app.use('/api/v1',routerPropied);
+app.use('/api/v1',routerTarif);
 
 
 app.listen(PORT, (error) => {

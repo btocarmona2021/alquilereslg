@@ -8,7 +8,7 @@
 * mysql2
 * sequelize
 
-### Endpoints de Comodidades
+## Endpoints de Comodidades
 
 [Listar](http://localhost:5000/api/v1/comodidad) **GET**
 
@@ -20,7 +20,7 @@
 
 [Eliminar](http://localhost:5000/api/v1/comodidad/4) **DELETE**
 
-### Endpoints de Disponibilidades
+## Endpoints de Disponibilidades
 
 [Listar](http://localhost:5000/api/v1/disponibilidad) **GET**
 
@@ -32,7 +32,7 @@
 
 [Eliminar](http://localhost:5000/api/v1/disponibilidad/6) **DELETE**
 
-### Endpoints de Propiedades
+## Endpoints de Propiedades
 
 [Listar](http://localhost:5000/api/v1/propiedad) **GET**
 
@@ -43,3 +43,15 @@
 [Mostrar Uno](http://localhost:5000/api/v1/propiedad/6) **GET**
 
 [Eliminar](http://localhost:5000/api/v1/propiedad/6) **DELETE**
+
+## Endpoints de Tarifas
+
+[Listar](http://localhost:5000/api/v1/tarifa) **GET**
+
+[Modificar](http://localhost:5000/api/v1/tarifa/6) **PUT**
+
+[Crear](http://localhost:5000/api/v1/tarifa) **POST**
+
+[Mostrar Uno](http://localhost:5000/api/v1/tarifa/6) **GET**
+
+[Eliminar](http://localhost:5000/api/v1/tarifa/6) **DELETE**

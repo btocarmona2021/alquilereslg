@@ -36,7 +36,7 @@ const Tarifa = db.define('tarifa', {
         timestamps: false
     }
 )
-Tarifa.belongsTo(Propiedad, {foreignKey: 'propiedadId'});
+Tarifa.belongsTo(Propiedad, {foreignKey: 'propiedad_id'});
 
 export default Tarifa;
 
