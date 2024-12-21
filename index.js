@@ -6,7 +6,7 @@ import routerPropied from "./routes/PropiedadRoute.js";
 import routerTarif from "./routes/TarifaRoute.js";
 import routerImage from "./routes/ImagenRoute.js";
 import routerOpin from "./routes/OpinionRoute.js";
-
+import routerUsua from "./routes/UsuarioRoute.js";
 const app = express();
 
 const PORT = 5000;
@@ -20,6 +20,7 @@ app.use('/api/v1',routerPropied);
 app.use('/api/v1',routerTarif);
 app.use('/api/v1',routerImage);
 app.use('/api/v1',routerOpin);
+app.use('/api/v1',routerUsua);
 
 
 app.listen(PORT, (error) => {

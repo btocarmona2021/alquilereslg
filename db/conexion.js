@@ -2,7 +2,7 @@ import {Sequelize} from 'sequelize';
 
 // Configuración de Sequelize
 const db = new Sequelize('reservasturisticas', 'root', 'root', {
-    host: 'localhost',
+    host: '192.168.196.64',
     dialect: 'mysql',
     logging: false,
 });
@@ -14,7 +14,7 @@ const testConnection = async () => {
         await db.authenticate();
         console.log('Conexión a la base de datos exitosa');
     } catch (error) {
-        console.error('Error al conectar con la base de datos:', error.message);
+        console.error('Error al conectar con la base de dato:', error.message);
     }
 };
 

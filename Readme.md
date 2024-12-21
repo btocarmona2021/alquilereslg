@@ -7,6 +7,7 @@
 * cors
 * mysql2
 * sequelize
+* jsonwebtoken
 
 ## Endpoints de Comodidades
 
@@ -79,4 +80,16 @@
 [Mostrar Uno](http://localhost:5000/api/v1/opinion/6) **GET**
 
 [Eliminar](http://localhost:5000/api/v1/opinion/6) **DELETE**
+
+## Endpoints de Usuarios
+
+[Listar](http://localhost:5000/api/v1/usuario) **GET**
+
+[Modificar](http://localhost:5000/api/v1/usuario/6) **PUT**
+
+[Crear](http://localhost:5000/api/v1/usuario) **POST**
+
+[Mostrar Uno](http://localhost:5000/api/v1/usuario/6) **GET**
+
+[Eliminar](http://localhost:5000/api/v1/usuario/6) **DELETE**
 

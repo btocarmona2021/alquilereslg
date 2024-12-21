@@ -13,10 +13,15 @@ export const crearTarifa = async (req, res) => {
             res.status(400).json({message: "Verifique los campos"})
             return;
         }
-        if (moment(fecha_inicio) > moment(fecha_fin)) {
-            res.status(400).json({message: "La fecha de finalizacion no puede ser menor a la de inicio"});
+        const fechaInicioMoment = moment(fecha_inicio, "YYYY/MM/DD", true);
+        const fechaFinMoment = moment(fecha_fin, "YYYY/MM/DD", true);
+
+        if (!fechaInicioMoment.isValid() || !fechaFinMoment.isValid()) {
+            res.status(400).json({ message: "Las fechas deben estar en formato válido (YYYY/MM/DD)" });
             return;
         }
+
+
         const tarifa = await TarifaModel.create({
             propiedad_id,
             fecha_inicio,
